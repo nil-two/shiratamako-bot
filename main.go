@@ -74,10 +74,6 @@ type Response struct {
 	Content   *Content `json:"content"`
 }
 
-func toResponseText(s string) string {
-	return fmt.Sprintf("「%s」", s)
-}
-
 func responseOne(result *Result) error {
 	res := &Response{
 		To:        []string{result.Content.From},
@@ -86,7 +82,7 @@ func responseOne(result *Result) error {
 		Content: &Content{
 			ContentType: textMessage,
 			ToType:      toUser,
-			Text:        toResponseText(result.Content.Text),
+			Text:        result.Content.Text,
 		},
 	}
 
