@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/kusabashira/shiratamako-bot",
+	"ImportPath": "github.com/nil2nekoni/shiratamako-bot",
 	"GoVersion": "go1.5",
 	"GodepVersion": "v63",
 	"Deps": []
